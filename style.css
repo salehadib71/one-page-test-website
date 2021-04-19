@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Redressed', cursive;
+}
+body{
+    background-color: aliceblue;
+}
+#all{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(90deg, aliceblue, rgb(204, 172, 188));
+}
+.container{
+    max-width: 1000px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+.navMenu{
+    display: flex;
+    justify-content: space-evenly;
+}
+#cart{
+    margin-top: 15px;
+    display: none;
+}
+.navMenu ul{
+    list-style-type: none;
+    display: flex;
+}
+.navMenu ul li{
+    padding: 20px;
+    font-size: 20px;
+}
+.navMenu ul li a:hover{
+    color: rgb(149, 124, 240);
+    transition: 0.5s;
+}
+.navMenu ul li a{
+    text-decoration: none;
+    color: hotpink;
+}
+#container1{
+    justify-content: space-between;
+}
+.navBar img{
+    margin-top: 15px;
+}
+.info h1{
+    text-transform: capitalize;
+}
+.info{
+    margin-top: 140px;
+}
+.info button{
+    padding: 8px 25px;
+    background-color: rgb(240, 193, 232);
+    border-radius: 15px;
+    margin-top: 55px;
+}
+.info button:hover{
+    transition: 0.5s;
+    background-color: rgb(167, 247, 220);
+}
+.sportsMan{
+    margin-top: 90px;
+}
+#container2{
+    justify-content: space-between;
+}
+.box{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 950px;
+    padding-top: 35px;
+    margin: auto;
+}
+#box1 img{
+    transition: 0.5s;
+    height: 300px;
+    transition: 0.5s;
+    box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+}
+#box1 img:hover{
+    transform: scale(1.2);
+}
+.underline{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+}
+.underline::after{
+    content: '';
+    width: 85px;
+    height: 5px;
+    background-color: orangered;
+    position: absolute;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 45px;
+}
+#box2 img:hover{
+    margin-top: -10px;
+    box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.product2 img:hover{
+    transform: scale(0.8);
+    box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+}
+.product2 img{
+    transition: 0.5s;
+}
+i{
+    color: rgb(201, 74, 28);
+}
+.exclusive{
+    background-image: linear-gradient(90deg, aliceblue, rgb(204, 172, 188));
+    height: 400px;
+    margin-top: 40px;
+}
+.wide{
+    max-width: 950px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.wide p{
+    font-size: 25px;
+    margin-top: 160px;
+}
+.wide img{
+    margin-top: 50px;
+    transition: 0.8s;
+}
+.wide img:hover{
+    transform: scale(1.2);
+}
+.users{
+    margin-top: 55px;
+    border: 1px solid transparent;
+    padding: 50px;
+    box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 24px 1px rgba(0,0,0,0.75);
+
+}
+.users i{
+    color: orangered;
+}
+.users img{
+    border-radius: 50%;
+    height: 150px;
+    transition: 0.5s;
+    margin-top: 15px;
+}
+.users img:hover{
+    transform: scale(1.1);
+}
+#brands img{
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+#brands img:hover{
+    filter: grayscale(0%);
+}
+@media only screen and (max-width:894px){
+    #cart{
+        display: initial;
+        padding-right: 30px;
+    }
+    #ul{
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        right: 0px;
+        background-color: #555;
+        display: block;
+        text-align: left;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    #ul li{
+        border-bottom: 1px solid white;
+    }
+    #ul li a{
+        color: white;
+        padding: 10px;
+    }
+    .box{
+        display: block;
+    }
+    #box1 img{
+        margin: 15px 20px;
+    }
+    .product2, .product1{
+        margin: 30px 0px;
+    }
+    .product1 img{
+        width: 300px;
+        height: auto;
+    }
+    .product2 img{
+        width: 300px;
+        height: auto;
+    }
+    .product1{
+        flex-basis: 50%;
+    }
+    #testimonial{
+        width: 300px;
+        text-align: center;
+    }
+    #brands img{
+        height: 80px;
+    }
+    #brands{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:803px){
+    #all{
+        height: auto;
+    }
+    #container2{
+        display: block;
+    }
+    .product1 img{
+        width: 230px;
+    }
+    .product2 img{
+        width: 230px;
+    }
+    .users{
+        height: auto;
+    }
+    .wide{
+        display: block;
+    }
+    .exclusive{
+        height: auto;
+    }
+    #brands img{
+        height: 50px;
+    }
+}
+@media only screen and (max-width:464px){
+    #all{
+        height: auto;
+    }
+    .sportsMan img{
+        height: 300px;
+    }
+}
+@media only screen and (max-width:400px){
+    #all{
+        height: auto;
+    }
+    .sportsMan img{
+        height: 250px;
+    }
+    .container{
+        width: 100%;
+    }
+    *{
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width:360px){
+    #all{
+        width: 100%;
+    }
+    *{
+        overflow-x: hidden;
+    }
+}
